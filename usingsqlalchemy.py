@@ -4,6 +4,11 @@ import pandas as pd
 import connection as con
 import loaddata as ld
 
+connectionstr = 'mysql+pymysql://' + con.user + ':' + con.password + '@127.0.0.1/ejnic'
+filetoload = ld.FileLoad('filename', 'filepath', 'tablename', 'ejnic', connectionstr)
+filetoload.DoLoad()
+
+
 userVitals = {"UserId": ["xxxxx", "yyyyy", "zzzzz", "aaaaa", "bbbbb", "ccccc", "ddddd"],
 
               "UserFavourite": ["Greek Salad", "Philly Cheese Steak", "Turkey Burger", "Crispy Orange Chicken",
