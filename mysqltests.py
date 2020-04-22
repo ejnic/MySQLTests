@@ -89,7 +89,9 @@ TABLES['titles'] = (
     "  CONSTRAINT `titles_ibfk_1` FOREIGN KEY (`emp_no`)"
     "     REFERENCES `employees` (`emp_no`) ON DELETE CASCADE"
     ") ENGINE=InnoDB")
+
 cursor = cnx.cursor()
+
 for table_name in TABLES:
     table_description = TABLES[table_name]
     try:
