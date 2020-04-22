@@ -133,3 +133,4 @@ dmypy.json
 .gitignore
 .idea/.gitignore
 .idea/misc.xml
+/connection.py
